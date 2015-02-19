@@ -103,9 +103,9 @@
     node: document.querySelector("#memoryGraph"),
     renderer: 'area',
     expr: [
-      "node_memory_Cached{job='node',instance='{{ .Params.instance }}'}",
-      "node_memory_Buffers{job='node',instance='{{ .Params.instance }}'}",
       "node_memory_MemTotal{job='node',instance='{{ .Params.instance }}'} - node_memory_MemFree{job='node',instance='{{.Params.instance}}'} - node_memory_Buffers{job='node',instance='{{.Params.instance}}'} - node_memory_Cached{job='node',instance='{{.Params.instance}}'}",
+      "node_memory_Buffers{job='node',instance='{{ .Params.instance }}'}",
+      "node_memory_Cached{job='node',instance='{{ .Params.instance }}'}",
       "node_memory_MemFree{job='node',instance='{{ .Params.instance }}'}",
     ],
     name: function(metric) {
