@@ -1,0 +1,5 @@
+prometheus /usr/sbin
+promtool /usr/sbin
+console_libraries /etc/prometheus
+consoles /etc/prometheus
+debian/prometheus.yml /etc/prometheus

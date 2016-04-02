@@ -1,0 +1,24 @@
+Source: prometheus
+Section: net
+Priority: extra
+Maintainer: Stephen Shirley <kormat+pkgs@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://github.com/prometheus/prometheus
+
+Package: prometheus
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, adduser
+Description: monitoring system and time series database
+ Prometheus's main features are:
+ .
+ - a multi-dimensional data model (time series identified by metric name and
+   key/value pairs)
+ - a flexible query language to leverage this dimensionality
+ - no reliance on distributed storage; single server nodes are autonomous
+ - time series collection happens via a pull model over HTTP
+ - pushing time series is supported via an intermediary gateway
+ - targets are discovered via service discovery or static configuration
+ - multiple modes of graphing and dashboarding support
+ .
+ This package contains the main Prometheus server.

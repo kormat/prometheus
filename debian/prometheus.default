@@ -1,0 +1,10 @@
+# Defaults for prometheus initscript
+# sourced by /etc/init.d/prometheus
+# installed at /etc/default/prometheus by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+# Additional options that are passed to the Daemon.
+DAEMON_ARGS='-log.format logger:syslog?appname=prometheus&local=7 -log.level info'
